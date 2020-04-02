@@ -15,17 +15,16 @@
     <form method="POST" >
         <label for="itemName">Item</label>
         <input type=text id="itemName" name="itemName">
-        <label for="itemPrice">Price</label>
+        <label for="itemPrice">Price (in £)</label>
         <input type="number" id="itemPrice" name="itemPrice">
         <label for="itemCondition">Condition</label>
         <select name="itemCondition" id="itemCondition">
             <option value="BNIB">Brand New In Box</option>
-            <option value="New">New - Unused</option>
+            <option value="New - Unused">New - Unused</option>
             <option value="Used">Used</option>
-            <option value="Refurb">Refurbished</option>
         </select>
         <label for="itemDescription">Description</label>
-        <input type=text id="itemDescription" name="itemDescription">
+        <textarea id="itemDescription" name="itemDescription"></textarea><br>
         <input type="submit" value="Submit" name="itemSubmit">
     </form>
 </body>
