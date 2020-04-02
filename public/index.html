@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
     <title>Lister</title>
 </head>
 <body>
-    <form>
-        <input type=text name="itemName">
-        <textarea name="itemDescription">Please Write a description</textarea>
-        <input type="submit" value="submit" name="itemSubmit">
+    <form method="POST" >
+        <label for="itemName">Item</label>
+        <input type=text id="itemName" name="itemName" required>
+        <label for="itemPrice">Price (in £)</label>
+        <input type="number" id="itemPrice" name="itemPrice" required>
+        <label for="itemCondition">Condition</label>
+        <select name="itemCondition" id="itemCondition">
+            <option value="BNIB">Brand New In Box</option>
+            <option value="New - Unused">New - Unused</option>
+            <option value="Used">Used</option>
+        </select>
+        <label for="itemDescription">Description</label>
+        <textarea id="itemDescription" name="itemDescription" required></textarea><br>
+        <input type="submit" value="Submit" name="itemSubmit">
     </form>
 </body>
 </html>

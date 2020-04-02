@@ -1,0 +1,43 @@
+html{
+    height:100%
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 239, 215);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height:35%;
+    justify-content: space-between;
+}
+#itemDescription{
+    height:100px;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    border:2px solid black;
+}
+.listingDescription{
+    width:80%;
+    align-self:center;
+    text-align: center;
+}
+.listingName{
+    align-self: center;
+}
+
+div.priceAndCondition{
+    display:flex;
+    justify-content: space-around;
+}
+[type="submit"]{
+    width:50%;  
+    align-self:center;
+}
