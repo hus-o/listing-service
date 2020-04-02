@@ -1,0 +1,11 @@
+$(document).ready(function (){
+    let params = new URLSearchParams(location.search)
+    const itemName = params.get("itemName")
+    const itemPrice = params.get("itemPrice")
+    const itemCondition = params.get("itemCondition")
+    const itemDescription = params.get("itemDescription")
+    $("#listingName").append(itemName)
+    $("#listingPrice").append(itemPrice)
+    $("#listingCondition").append(itemCondition)
+    $("#listingDescription").append(itemDescription)
+})
