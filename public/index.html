@@ -14,9 +14,9 @@
 <body>
     <form method="POST" >
         <label for="itemName">Item</label>
-        <input type=text id="itemName" name="itemName">
+        <input type=text id="itemName" name="itemName" required>
         <label for="itemPrice">Price (in £)</label>
-        <input type="number" id="itemPrice" name="itemPrice">
+        <input type="number" id="itemPrice" name="itemPrice" required>
         <label for="itemCondition">Condition</label>
         <select name="itemCondition" id="itemCondition">
             <option value="BNIB">Brand New In Box</option>
@@ -24,7 +24,7 @@
             <option value="Used">Used</option>
         </select>
         <label for="itemDescription">Description</label>
-        <textarea id="itemDescription" name="itemDescription"></textarea><br>
+        <textarea id="itemDescription" name="itemDescription" required></textarea><br>
         <input type="submit" value="Submit" name="itemSubmit">
     </form>
 </body>
